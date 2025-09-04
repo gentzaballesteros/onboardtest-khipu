@@ -117,6 +117,7 @@ Webhook recibido: { payment_id: "XXXXXX", status: "done", ... }
 ```
 khipu-csm-demo/
 ├── server.js         # Servidor Express con endpoints de integración
+├── package-lock.json # Versiones de dependencias
 ├── package.json      # Dependencias y scripts npm
 ├── .env.example      # Variables de entorno (plantilla)
 └── README.md         # Documentación del proyecto
