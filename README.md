@@ -6,7 +6,7 @@ Simula el flujo completo de pago en **DemoBank** (con tope de $5.000 CLP), inclu
 - Creación de pagos vía API (`/v3/payments`)
 - Recepción de notificaciones automáticas mediante **webhook** (`/webhook`)
 - Validación de firmas HMAC para seguridad
-- Exposición del servidor local a Internet usando túneles (LocalTunnel / Cloudflared)
+- Exposición del servidor local a Internet usando túneles (Ngrok, LocalTunnel o Cloudflared)
 ---
 
 ## Requisitos previos
@@ -15,7 +15,7 @@ Simula el flujo completo de pago en **DemoBank** (con tope de $5.000 CLP), inclu
 - npm (incluido con Node.js)  
 - Cuenta de desarrollador en [Khipu](https://khipu.com/) para obtener **API Key**  
 - Postman (para probar las requests)  
-- LocalTunnel o Cloudflared (para exponer tu servidor público en las pruebas). Usé LocalTunnel
+- Ngrok, LocalTunnel o Cloudflared (para exponer tu servidor público en las pruebas). Usé LocalTunnel
 
 ---
 
@@ -32,7 +32,7 @@ Simula el flujo completo de pago en **DemoBank** (con tope de $5.000 CLP), inclu
    npm install
    ```
 
-3. Crea un archivo `.env` en la raíz del proyecto (usa `.env.example` como referencia):
+3. Crea un archivo `.env` en la raíz del proyecto (usa `ejemplo.env` como referencia):
 
    ```env
    PORT=3000
